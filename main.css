@@ -204,12 +204,22 @@ form>div>p {
     }
 
     .div-free {
+        background-color: var(--blue);
+        color: white;
         padding: 18px 5px;
+        border: none;
         border-radius: 5px;
         margin-bottom: 30px;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
         font-size: 15px;
         line-height: 26px;
         letter-spacing: 0.267857px;
+    }
+
+    .div-free>span {
+        font-weight: bold;
     }
 
     form {
