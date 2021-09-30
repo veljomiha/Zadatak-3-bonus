@@ -155,6 +155,7 @@ label {
 
 label>span {
     color: var(--red);
+    font-weight: bold;
 }
 
 form>div>p {
