@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
 :root {
     --red: rgb(255, 122, 122);
     --green: rgb(56, 204, 140);
@@ -48,7 +47,7 @@ body {
     line-height: 55px;
     letter-spacing: -0.520833px;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .first-part>p {
@@ -62,17 +61,16 @@ body {
     flex-grow: 1;
     flex-basis: 0;
     margin-left: 15px;
-
 }
 
 .div-free {
     width: 100%;
     background-color: var(--blue);
     color: white;
-    padding: 18px 20px;
+    padding: 17px 20px;
     border: none;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -80,12 +78,10 @@ body {
     line-height: 26px;
     letter-spacing: 0.267857px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-
 }
 
 .div-free>span {
     font-weight: bold;
-
 }
 
 form {
@@ -95,6 +91,7 @@ form {
     padding: 40px 50px;
     border-radius: 10px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    /* filter:drop-shadow(rgba(0, 0, 0, 0.1469)); */
 }
 
 input[type=text],
@@ -118,7 +115,7 @@ input[type=submit] {
     width: 100%;
     background-color: var(--green);
     color: white;
-    padding: 18px 20px;
+    padding: 15px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 5px;
@@ -126,7 +123,6 @@ input[type=submit] {
     letter-spacing: 1px;
     transition: 0.2s;
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-
 }
 
 input[type=submit]:hover {
@@ -174,7 +170,7 @@ form>div>p {
     background-repeat: no-repeat;
     background-position: 95% center;
     outline: none;
-    border: 2px solid red!important; 
+    border: 2px solid var(--red)!important; 
 }
 
 .error::placeholder {
@@ -206,9 +202,6 @@ form>div>p {
 
     .container {
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         text-align: center;
     }
@@ -218,37 +211,14 @@ form>div>p {
     }
 
     .first-part>h1 {
-        font-style: normal;
-        font-weight: bold;
         font-size: 28px;
         line-height: 36px;
         text-align: center;
         letter-spacing: -0.291667px;
-        color: #FFFFFF;
-        margin-bottom: 30px;
     }
 
     .second-part {
         margin: 50px 0;
-    }
-
-    .div-free {
-        background-color: var(--blue);
-        color: white;
-        padding: 18px 5px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 30px;
-        text-align: center;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 26px;
-        letter-spacing: 0.267857px;
-    }
-
-    .div-free>span {
-        font-weight: bold;
     }
 
     form {
