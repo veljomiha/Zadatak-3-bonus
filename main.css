@@ -24,8 +24,9 @@ body {
     background-color: var(--red);
 }
 
-section {
+.container {
     height: 100vh;
+    overflow:scroll;
     position: relative;
     display: flex;
     justify-content: center;
@@ -125,10 +126,12 @@ input[type=submit] {
     cursor: pointer;
     letter-spacing: 1px;
     transition: 0.2s;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+
 }
 
 input[type=submit]:hover {
-    background-color: rgba(56, 204, 140,0.9);
+    background-color: #979797;
     transition: 0.3s;
 }
 
@@ -166,22 +169,35 @@ form>div>p {
     text-align: right;
     color: #FF7979;
 }
-.error{
+
+.error {
     background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
-    background-position:95% center;
-}
-.error-2{
-    background: none;
+    background-position: 95% center;
+    outline: none;
+    border: 2px solid red!important; 
 }
 
-@media (max-width:768px) {
+.error::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #FF7979!important;
+}
+
+.error-2 {
+    background: none;
+    /* outline: none; */
+    border:1px solid #DEDEDE!important; 
+}
+
+@media (max-width:768px), (max-width:820px) and (orientation:landscape){
     body {
         background-image: url(images/bg-intro-mobile.png);
-
     }
 
-    body>div {
+    section {
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -189,7 +205,7 @@ form>div>p {
         overflow-y: scroll;
     }
 
-    section {
+    .container {
         height: auto;
         display: flex;
         justify-content: center;
@@ -244,12 +260,5 @@ form>div>p {
     input[type=email],
     input[type=password] {
         padding: 12px 20px;
-    }
-}
-
-/*ovo zbog ipod-a da bi bio na sredini*/
-@media (max-width:600px) {
-    body>div {
-        height: auto;
     }
 }
