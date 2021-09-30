@@ -26,7 +26,6 @@ body {
 
 .container {
     height: 100vh;
-    overflow:scroll;
     position: relative;
     display: flex;
     justify-content: center;
